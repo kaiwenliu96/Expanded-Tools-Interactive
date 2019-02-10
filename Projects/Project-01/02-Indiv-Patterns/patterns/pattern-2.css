@@ -1,0 +1,35 @@
+
+#container{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.square{
+	width: 100px;
+	height: 100px;
+	background:red;
+}
+
+.square-transparent div{
+    width: 45px;
+    height: 1000px;
+    background-color: #ff000066;
+    opacity: 0.5;
+    margin: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rectangle-2 {
+    width: 99%;
+    height: 45px;
+    background: #bcd4d2;
+    opacity:0.7;
+    margin: 45px auto;
+    mix-blend-mode: overlay;
+
+    }

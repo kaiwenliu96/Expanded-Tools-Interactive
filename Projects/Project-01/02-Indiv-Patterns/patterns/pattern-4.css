@@ -1,0 +1,45 @@
+#container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: left;
+}
+
+ 	.diamond {
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-bottom-color: #718295;
+      position: relative;
+      top: -100px;
+    }
+    .diamond:after {
+      content: '';
+      position: absolute;
+      left: -100px;
+      top: 100px;
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-top-color: #718295;
+    }
+
+
+    .diamond-2 {
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-bottom-color: #26a9bc;
+      position: relative;
+      top: -100px;
+    }
+    .diamond-2:after {
+      content: '';
+      position: absolute;
+      left: -100px;
+      top: 100px;
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-top-color: #26a9bc;
+    }
