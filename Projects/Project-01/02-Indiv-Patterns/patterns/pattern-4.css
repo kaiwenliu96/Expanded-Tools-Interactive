@@ -1,13 +1,17 @@
+
+
 #container{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: left;
+  
 }
 
  	.diamond {
   display: inline-block;
-  background-color: #29c6cd;
+  background: linear-gradient(to bottom, rgba(171, 220, 255,1) 0%, rgba(3, 150, 255,1) 100%);
+  
   height: 150px;
   width: 150px;
   font-size: 2px;
@@ -43,7 +47,7 @@ body {
 
 .diamond-2 {
   display: inline-block;
-  background-color: #f06868;
+  background: linear-gradient(to bottom, rgba(253, 235, 113,1) 0%, rgba(248, 216, 0,1) 100%);
   height: 150px;
   width: 150px;
   font-size: 5px;
