@@ -13,12 +13,41 @@ body{
 	height:150px;
 	background-color:#e72c58;
 	border-radius:50%;
-	margin-top: 40px;
+	margin-top: 25px;
 	margin-bottom: 40px;
 }
 .rectangle-1 {
-      width: 100px;
-      height: 200px;
-      background-color: #1d2c6d;
-      margin: 20px;
-    }
+  display: inline-block;
+  background-color: #10316b;
+  height: 150px;
+  width: 100px;
+  transform: skew(45deg);
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-top: 20px
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: shake 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

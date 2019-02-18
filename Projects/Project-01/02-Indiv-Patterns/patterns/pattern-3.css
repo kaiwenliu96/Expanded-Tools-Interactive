@@ -15,6 +15,9 @@
       width: 100px;
       height: 90px;
       margin: 70px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
     }
     .heart:before,
     .heart:after {
@@ -34,6 +37,14 @@
       transform: rotate(45deg);
       transform-origin: 100% 100%;
     }
+
+    .heart:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    
+   
+}
 
 #big-heart {
       position: relative;

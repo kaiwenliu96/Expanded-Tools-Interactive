@@ -6,40 +6,74 @@
 }
 
  	.diamond {
-      width: 0;
-      height: 0;
-      border: 100px solid transparent;
-      border-bottom-color: #718295;
-      position: relative;
-      top: -100px;
-    }
-    .diamond:after {
-      content: '';
-      position: absolute;
-      left: -100px;
-      top: 100px;
-      width: 0;
-      height: 0;
-      border: 100px solid transparent;
-      border-top-color: #718295;
-    }
+  display: inline-block;
+  background-color: #29c6cd;
+  height: 150px;
+  width: 150px;
+  font-size: 2px;
+  padding: 2px;
+  color: white;
+  margin-right: 1px;
+  margin-left: 1px;
+  animation: roll 7s infinite;
+  transform: rotate(30deg);
+  opacity: .7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
-    .diamond-2 {
-      width: 0;
-      height: 0;
-      border: 100px solid transparent;
-      border-bottom-color: #26a9bc;
-      position: relative;
-      top: -100px;
-    }
-    .diamond-2:after {
-      content: '';
-      position: absolute;
-      left: -100px;
-      top: 100px;
-      width: 0;
-      height: 0;
-      border: 100px solid transparent;
-      border-top-color: #26a9bc;
-    }
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond-2 {
+  display: inline-block;
+  background-color: #f06868;
+  height: 150px;
+  width: 150px;
+  font-size: 5px;
+  padding: 5px;
+  color: white;
+  margin-right: 1px;
+  margin-left: 1px;
+  animation: roll 7s infinite;
+  transform: rotate(30deg);
+  opacity: .7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

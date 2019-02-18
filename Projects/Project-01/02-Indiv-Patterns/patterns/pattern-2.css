@@ -4,13 +4,25 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;  
 }
 
 .square{
 	width: 100px;
 	height: 100px;
 	background:red;
+  animation-name: turned;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+.square:hover{
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  transition: all 0.5s ease;
 }
 
 .square-transparent div{
@@ -33,3 +45,27 @@
     mix-blend-mode: overlay;
 
     }
+
+@keyframes turned {
+  0% {
+    background-color: #acdbdf;
+  }
+  100% {
+
+  }
+}
+
+body {
+  animation-name: turned;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+
+body:hover {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
