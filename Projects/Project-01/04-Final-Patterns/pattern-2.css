@@ -1,0 +1,104 @@
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+          animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+#container{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+
+.square{
+	width: 100px;
+	height: 100px;
+	background:red;
+  animation-name: turned;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+.square:hover{
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  transition: all 0.5s ease;
+}
+
+.square-transparent div{
+    width: 45px;
+    height: 1000px;
+    background-color: #ff000066;
+    opacity: 0.5;
+    margin: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rectangle-2 {
+    width: 99%;
+    height: 45px;
+    background: #bcd4d2;
+    opacity:0.7;
+    margin: 45px auto;
+    mix-blend-mode: overlay;
+
+    }
+
+@keyframes turned {
+  0% {
+    background-color: #acdbdf;
+  }
+  100% {
+
+  }
+}
+
+body {
+  animation-name: turned;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+
+body:hover {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}

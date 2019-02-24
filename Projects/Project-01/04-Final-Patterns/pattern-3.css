@@ -1,0 +1,121 @@
+.position-fixed{
+  position:fixed;
+  top:0px;
+  left:0px;
+}
+
+
+
+.square-transparent {
+
+  width: 1980px;
+  height: 177px;
+  margin:20px;
+  background-image:
+    linear-gradient(
+      to right, 
+     #ffc6a6, #ffbfef);
+    opacity: 0.6;
+    
+
+}
+
+.square-transparent2 {
+
+  width: 1980px;
+  height: 88px;
+  margin:20px;
+  
+  background-image:
+    linear-gradient(
+      to right, 
+     #ffc6a6, #ffbfef);
+    
+
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      margin: 70px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background-color:#ea168e;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    .heart:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    
+   
+}
+
+#big-heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      margin-left:450px;
+      margin-top:200px;
+
+      animation: pulse 1s ease infinite;
+}
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+}
+    
+    #big-heart:before,
+    #big-heart:after {
+      position: absolute;
+      content: "";
+      left: 350px;
+      top: 0;
+      width: 350px;
+      height: 560px;
+      background-color: #6effbf;
+      border-radius: 350px 350px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #big-heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+  
+  

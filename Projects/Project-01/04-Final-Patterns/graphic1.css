@@ -1,0 +1,153 @@
+body{
+	font-size: 20px;
+}
+
+.triangle{
+	width:0px;
+	height:0px;
+	border-left:150px solid transparent;
+	border-right:150px solid transparent;
+	border-bottom: 300px solid #1d2572;
+	opacity: 0.8;
+    margin-right: -1000px;
+    margin-top: -150px;
+
+    transition: all ease-out;
+	transform: scale(1.2);
+
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    font-size: 24px;
+    background: #5885cb;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    text-align: center;    
+    }
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+  
+ /*
+.triangle:hover{
+	width:0px;
+	height:0px;
+	border-left:150px solid transparent;
+	border-right:150px solid transparent;
+	border-bottom: 300px solid #a287f4;
+	opacity: 0.8;
+    margin-right: -100px;
+    transition: color 2s ease-out;
+	transform: scale(1.2);
+	
+}*/
+
+.circle{
+	width:200px;
+	height:200px;
+	background-color:#ffc010;
+	opacity: 0.8;
+	border-radius:50%;
+	transform: translateX(-5px);
+	margin-right: 0px;
+	transition: all 4s ease-out;
+	transform: scale(1.2);
+}
+
+.circle:hover{
+	width:200px;
+	height:200px;
+	background-color:#c9f658;
+	opacity: 0.8;
+	border-radius:50%;
+	transform: translateX(-5px);
+	transition: color 2s ease-out;
+	transform: scale(1.2);
+}
+
+.combine{
+	display: inline-block;
+    margin-top: -100px;
+    transform: translateX(0px);
+}
+/*animation: roll 5s infinite;
+  transform: rotate(30deg);
+  opacity: 1;
+}
+
+/*@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body, html {
+  height: 100%;
+}
+
+}
+
+
+
+a{
+	font-family: sans-serif;
+	font-size: 48px;
+	color: black;
+}
+
+#home{
+	margin: 10em auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
