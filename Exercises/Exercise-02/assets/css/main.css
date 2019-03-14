@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+	border: solid black 5px;
+}
+
+ .book1 {
+	 width: 80px;
+	 height: 110px;
+	  background-color: #D6D6D6;
+	  transform:skew(320deg);
+	  margin-top:320px;
+	  margin-left:200px;
+	  
+	}
+
+ .book1-v {
+      width: 79px;
+      height: 20px;
+      background: #6C6C6C;
+      margin-left:154px;
+    }
+
+   .book1-h {
+	 width: 92px;
+	 height: 20px;
+	  background-color: #6C6C6C;
+	  transform:skewY(310deg);
+	  margin-top:-75px;
+	  margin-left:233px;
+	}
+
+   .vase{
+    width:200px;
+    height:230px;
+    background:#688440;
+    position:absolute;
+    top:300px;
+    left:350px;
+    border-radius:100px 100px 50px 50px;
+
+   }
+
+   .vasetop{
+     width:80px;
+     height: 80px;
+     background:#688440;
+     position: absolute;
+     top:290px;
+     left:410px;
+     border-radius:10px;
+   }
+
+   .line1 {
+      width: 100px;
+      height: 3px;
+      background: black;
+      transform:rotate(70deg);
+      margin-left: 362px;
+      margin-top: -153px;
+    }
+    .circle1 {
+      width: 40px;
+    height: 40px;
+    background: #F2DA2F;
+    border-radius: 50%;
+    margin-top: -122px;
+    margin-left: 392px;
+    }
+    .line2 {
+      width: 95px;
+    height: 3px;
+    background: black;
+    transform: rotate(85deg);
+    margin-left: 411px;
+    margin-top: -4px;
+    }
+    .circle2 {
+          width: 40px;
+    height: 40px;
+    background: #F2DA2F;
+    border-radius: 50%;
+    margin-top: -9px;
+    margin-left: 369px;;
+    }
+    .line3 {
+      width: 130px;
+    height: 3px;
+    background: black;
+    transform: rotate(75deg);
+    margin-left: 368px;
+    margin-top: -16px;
+    }
+    .circle3 {
+      width: 40px;
+    height: 40px;
+    background: #F2DA2F;
+    border-radius: 50%;
+    margin-top: -42px;
+    margin-left: 433px;
+    }
+    .line4 {
+      width: 113px;
+    height: 3px;
+    background: black;
+    transform: rotate(130deg);
+    margin-left: 449px;
+    margin-top: 15px;
+    }
+    .circle4 {
+    width: 40px;
+    height: 40px;
+    background: #F2DA2F;
+    border-radius: 50%;
+    margin-top: -23px;
+    margin-left: 537px;
+    }
+
+    .book2 {
+      width: 15px;
+    height: 200px;
+    background: #6C6C6C;
+    margin-left: 570px;
+    }
+
+    .book2-h {
+   width: 15px;
+    height: 40px;
+    background-color: #6C6C6C;
+    transform: skew(310deg);
+    margin-top: -239px;
+    margin-left: 593px;
+  }
+  .book2-v {
+   width: 47px;
+    height: 200px;
+    background-color: #a5db8a;
+    transform: skewY(320deg);
+    margin-top: -21px;
+    margin-left: 585px;
+  }
+
+    .toy {
+        width: 100px;
+        height: 130px;
+        background: #DCDCDC;
+        opacity: 0.7;
+        margin-left: 264px;
+        margin-top: -244px;
+    }
+
+    .toybottom {
+        width: 100px;
+        height: 20px;
+        background: #202120;
+        opacity: 0.8;
+        margin-left: 264px;
+        margin-top: -1px;
+    }
+    .toytop{
+     height: 45px;
+    width: 100px;
+    border-radius: 0 0 90px 90px;
+    background: #D3D3D3;
+    opacity: 0.7;
+    margin-left: 264px;
+    margin-top: -149px;
+}
+  
