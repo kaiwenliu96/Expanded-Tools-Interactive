@@ -1,0 +1,120 @@
+@import url();
+
+div.planets {
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+  padding: 40px;
+  font-size: 60px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.images {
+  		width: 200px;
+  		vertical-align: sub
+  	}
+
+.saturnimages {
+  		width: 400px;
+  		vertical-align: sub
+  	}
+
+#main {margin-left: 4px;
+font-size: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menuitem:hover {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+body {
+background-image: linear-gradient(to left, #fff1eb 0%, #ace0f9 100%);
+
+
+}
+
+/* Text
+-------------------------------------------------- */
+
+
+
+/* Image
+-------------------------------------------------- */
+
+
+
+/* iPad 
+-------------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-width: 1024px){
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { */
+	div.planets {
+    font-size: 60px;
+   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  }
+	#leftsidebar {width: auto; float: left;}
+  	#main {margin-left: auto;}
+
+
+  /* text */
+ body {
+ 	background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    /*background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);*/
+
+
+  }
+
+  /* image */
+
+}
+
+/* Mobile
+-------------------------------------------------- */
+@media screen and (max-width: 768px) {
+	div.planets {
+    font-size: 70px;
+    background-image: linear-gradient(to bottom, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+
+  }
+	#leftsidebar {width: auto; float: left;}
+  	#main {margin-left: auto;}
+
+  	.images {
+  		width: 100px;
+  		vertical-align: sub
+  	}
+
+  	.saturnimages {
+  		width: 200px;
+  		vertical-align: sub
+  	}
+
+
+  /* text */
+ body {
+   background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  }
+  /* image */
+
+}
+
+
