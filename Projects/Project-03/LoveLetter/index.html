@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The love letter for you</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+  
+</head>
+
+<body>
+
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-collapse collapse">
+			<h4 class="text-center"> The love letter for you </h4>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+        
+    <header>
+      <div style="margin-left: 68%; " class="typewriter-ver">
+		  <p class="lead" style = "writing-mode: vertical-rl; font-size: 35px; line-height: 55px; letter-spacing: 5px" > 
+
+			浮世万千 \ 吾爱有三 <br>
+		
+			日 \ 月与卿 <br>
+
+
+			日为朝 \ 月为暮 <br>
+
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+			卿为朝朝暮
+
+		  </p>
+	  </div>
+	  
+
+      <div class="container">
+        
+        <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn bigTitle">
+            </h1>
+
+            <br />
+
+      <div>
+      <p class="lead wow fadeIn smallTitle" data-wow-delay="0.5s" align="left">
+				I love three things in this world:
+        <br>
+				the sun, the moon, and you;
+        <br>
+        <br>
+				The sun for the morning,
+        <br>
+				The moon for the night,
+        <br>
+        <br>
+
+				And you forever.
+			</p>
+
+     </div>
+            <br />
+              
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-xs-4 text-left wow fadeInUp" data-wow-delay="1s">
+                    <a href="#pricing" class="btn btn-primary btn-lg scroll">Sun</a>
+                  </div>
+                  <div class="col-xs-4 text-mid wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#invite" class="btn btn-primary btn-lg scroll">Moon</a>
+                  </div>
+
+                  <div class="col-xs-4 text-right wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#heartb" class="btn btn-primary btn-lg scroll">You</a>
+                  </div>
+                </div><!--End Button Row-->  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+        
+    <section id="pricing">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="white">The sun for the morning</h2>
+            <p class="white">日为朝</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section>
+	<div class="row">
+		<div class="col-sm-10" style="margin-top:30px">
+			<div>
+			  
+				<div class="row">
+
+				  <div align="center" class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<div id="clockbox1"></div>
+
+						<script type="text/javascript">
+						var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+						function GetClock(){
+						var d=new Date();
+						var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+						var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+						if(nhour==0){ap=" AM";nhour=12;}
+						else if(nhour<12){ap=" AM";}
+						else if(nhour==12){ap=" PM";}
+						else if(nhour>12){ap=" PM";nhour-=12;}
+
+						if(nmin<=9) nmin="0"+nmin;
+						if(nsec<=9) nsec="0"+nsec;
+
+						var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+						document.getElementById('clockbox1').innerHTML=clocktext;
+						}
+
+						GetClock();
+						setInterval(GetClock,1000);
+						</script>
+
+						<span class="specialTextStyleLarge" >
+							北京 <br>
+							Beijing
+						</span>
+
+								
+				  </div>
+				  
+				  <div align="center" class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+					<br />
+
+					<div id="clockbox2"></div>
+
+					  <script type="text/javascript">
+					  var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+					  function GetClock(){
+					  var offset = 15;
+					  var d=new Date( new Date().getTime() + offset * 3600 * 1000);
+					  var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+					  var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+					  if(nhour==0){ap=" AM";nhour=12;}
+					  else if(nhour<12){ap=" AM";}
+					  else if(nhour==12){ap=" PM";}
+					  else if(nhour>12){ap=" PM";nhour-=12;}
+
+					  if(nmin<=9) nmin="0"+nmin;
+					  if(nsec<=9) nsec="0"+nsec;
+
+					  var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+					  document.getElementById('clockbox2').innerHTML=clocktext;
+					  }
+
+					  GetClock();
+					  setInterval(GetClock,1000);
+					  </script>
+					  
+						<span class="specialTextStyleLarge" > 
+						旧金山 <br> 
+						San Francisco
+						</span>
+				  </div>
+
+				</div>
+
+			</div>
+
+			<div>
+			  
+				<div class="row">
+
+				  <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<a href="https://www.google.com/search?q=beijing+weather&oq=beijiing+we&aqs=chrome.1.69i57j0l5.6296j1j7&sourceid=chrome&ie=UTF-8" target="_blank"> 
+
+					  <img src="img/2.png" >
+
+					</a>
+				  </div>
+			  
+			  <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+				<br />
+				<a href="https://www.google.com/search?ei=kAvEXND8KYq4tQXwpKLoCw&q=san+francisco+weather&oq=San+francisco+weather&gs_l=psy-ab.1.0.35i39i285i70i256j0j0i131j0i20i263j0l6.7974.8367..10469...0.0..0.102.199.1j1......0....1..gws-wiz.......0i71j0i67j0i10.7LOqzvvtrfA"
+				target="_blank" style="margin-left:auto">
+					<img src="img/3.png">
+				</a>
+			  </div>
+
+				</div>
+
+			</div>
+			
+					
+		   <div>
+			  
+				<div  align="center" class="row">
+
+				  <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<span class="specialTextStyleSmall"> Today is cloudy and windy. <br></span>
+					<span class="specialTextStyleSmall"> 今日多云，有风。</span>
+				  </div>
+			  
+				   <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+					 <br />
+					<span class="specialTextStyleSmall"> Today is a sunny day. <br></span>
+					<span class="specialTextStyleSmall"> 今日天晴。 </span>
+				  </div>
+
+				</div>
+
+			</div>  
+		</div>
+		
+		<div class="col-sm-2" style="margin:10px 0px">
+			<img src="img/6.png" height="650px">
+		</div>
+	</div>
+	</section>
+          
+
+          
+
+    
+    
+    <section id="invite" class="light-gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center" >
+            <h2 class="black">The moon for the night</h2>
+            <br />
+            <p class="black">月为暮</p>
+            <br />
+
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section>
+	<div class="row">
+		<div class="col-sm-10" style="margin-top:30px">
+			<div>
+			  
+				<div class="row">
+
+				  <div align="center" class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<div id="clockbox1"></div>
+
+						<script type="text/javascript">
+						var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+						function GetClock(){
+						var d=new Date();
+						var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+						var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+						if(nhour==0){ap=" AM";nhour=12;}
+						else if(nhour<12){ap=" AM";}
+						else if(nhour==12){ap=" PM";}
+						else if(nhour>12){ap=" PM";nhour-=12;}
+
+						if(nmin<=9) nmin="0"+nmin;
+						if(nsec<=9) nsec="0"+nsec;
+
+						var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+						document.getElementById('clockbox1').innerHTML=clocktext;
+						}
+
+						GetClock();
+						setInterval(GetClock,1000);
+						</script>
+
+						<span class="specialTextStyleLarge" >
+							北京 <br>
+							Beijing
+						</span>
+
+								
+				  </div>
+				  
+				  <div align="center" class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+					<br />
+
+					<div id="clockbox2"></div>
+
+					  <script type="text/javascript">
+					  var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+					  function GetClock(){
+					  var offset = 15;
+					  var d=new Date( new Date().getTime() + offset * 3600 * 1000);
+					  var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+					  var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+					  if(nhour==0){ap=" AM";nhour=12;}
+					  else if(nhour<12){ap=" AM";}
+					  else if(nhour==12){ap=" PM";}
+					  else if(nhour>12){ap=" PM";nhour-=12;}
+
+					  if(nmin<=9) nmin="0"+nmin;
+					  if(nsec<=9) nsec="0"+nsec;
+
+					  var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+					  document.getElementById('clockbox2').innerHTML=clocktext;
+					  }
+
+					  GetClock();
+					  setInterval(GetClock,1000);
+					  </script>
+					  
+						<span class="specialTextStyleLarge" > 
+						旧金山 <br> 
+						San Francisco
+						</span>
+				  </div>
+
+				</div>
+
+			</div>
+
+			<div>
+			  
+        <div class="row">
+
+			  
+			  <div   class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+				<br />
+				<a href="https://www.google.com/search?ei=QTzFXKvnK8qAtgXji6yoBQ&q=working+overtime&oq=working+overtime&gs_l=psy-ab.3..0i71l8.5519.5841..6068...0.0..0.0.0.......0....1..gws-wiz.KTqTkOO5Rzs" target="_blank"> 
+				<div class="emoji sad" style="margin:0px 25%;" >
+				  <figure class="face">
+					<span class="eyes">
+					  <span class="eye"></span>
+					  <span class="eye"></span>
+					</span>
+					<span class="mouth teath tounge">
+					</span>
+				  </figure>
+				</div>
+				</a>
+			  </div>
+			 
+			  
+			<div class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+				<br />
+					
+				<a href="https://www.google.com/search?ei=SjzFXJnCB5KsswX4mKD4Cw&q=ding+tai+fung&oq=ding+tai+&gs_l=psy-ab.1.0.0j0i20i263j0j0i20i263j0l6.49124.50491..52314...0.0..0.105.839.8j1......0....1..gws-wiz.......0i71j35i39j0i131j0i67j0i10.IiPCpBy8sI4" target="_blank">
+				<div class="emoji grin" style="margin:0px 25%;">
+				  <figure class="face">
+					<span class="eyes">
+					  <span class="eye"></span>
+					  <span class="eye"></span>
+					</span>
+					<span class="mouth tounge">
+					</span>
+				  </figure>
+				</div>
+				</a>
+			</div>
+
+        </div>
+
+			</div>
+			
+					
+		   <div>
+			  
+				<div  align="center" class="row">
+
+				  <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<span class="specialTextStyleSmall"> Working overtime, so tired. <br></span>
+					<span class="specialTextStyleSmall"> 加班好累</span>
+				  </div>
+			  
+				   <div class="col-sm-6 couple wow fadeInUp" data-wow-delay="2.5s">
+					 <br />
+					<span class="specialTextStyleSmall">I went to Din Tai Fung, yummy!<br></span>
+					<span class="specialTextStyleSmall"> 今天去吃了鼎泰丰 </span>
+				  </div>
+
+				</div>
+
+			</div>  
+		</div>
+		
+		<div class="col-sm-2" style="margin:10px 0px">
+			<img src="img/6.png" height="650px">
+		</div>
+	</div>
+	</section>
+	
+
+	<section id="heartb" class="pad-xs">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="white">And you forever</h2>
+            <p class="white">卿为朝朝暮暮</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+	
+	<section>
+      
+        <div class="row">
+
+	          <div class="col-sm-12 couple wow fadeInUp" data-wow-delay="1.5s">
+	            <br />
+					<div class="wrapper">
+						<div class="hththt"> 
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+							  <path d="M150 57.3C100.2-17.4.7 26.3.7 107.6c0 55 49.7 94.2 87.1 123.8 38.8 30.7 49.8 37.3 62.2 49.8 12.4-12.4 22.8-19.7 62.2-49.8 37.9-29 87.1-69.4 87.1-124.4 0-80.7-99.5-124.4-149.3-49.7z" fill-rule="evenodd" clip-rule="evenodd"/>
+							  </svg>
+
+							<span class="i1"></span>
+							<span class="i2"></span>
+							<span class="i3"></span>
+							<span class="i4"></span>
+							<span class="i5"></span>
+							<span class="i6"></span>
+							<span class="i7"></span>
+							<span class="i8"></span>
+							<span class="i1"></span>
+							<span class="i2"></span>
+							<span class="i3"></span>
+							<span class="i4"></span>
+							<span class="i5"></span>
+							<span class="i6"></span>
+							<span class="i7"></span>
+							<span class="i8"></span>
+							<span class="i1"></span>
+							<span class="i2"></span>
+							<span class="i3"></span>
+							<span class="i4"></span>
+							<span class="i5"></span>
+							<span class="i6"></span>
+							<span class="i7"></span>
+							<span class="i8"></span>
+					  
+						</div>
+						
+					</div>
+				<p style="text-align: center; margin-top: -7%;">
+							Get a random love letter
+				</p>
+
+	          	</div>
+
+
+        </div>
+
+    </section>
+
+    <section>
+    	<div class="row">
+    		<div class="col-sm-12 couple wow fadeInUp" data-wow-delay="1.5s">
+					<br />
+					<div id="insertp"> </div>>
+			</div>
+    	</div>
+    	
+    </section>
+    
+ 
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+   
+    </body>
+</html>
